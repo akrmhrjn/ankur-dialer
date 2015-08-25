@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnkurDialer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Refresh Contacts</string>
+    <color name="black">#000</color>
+    <color name="green">#4caf50</color>
+    <color name="white">#fff</color>
+    <color name="lightgrey">#eee</color>
+    <color name="color_primary">#2196F3</color>
+
+</resources>

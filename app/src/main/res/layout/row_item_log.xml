@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <!--<com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ripple:rv_type="rectangle"
+        ripple:rv_color="#666"
+        ripple:rv_rippleDuration="20">-->
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearMerge"
+            android:padding="10dp"
+            android:background="@drawable/list_selector">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:textAllCaps="true"
+                android:text="5"
+                android:background="@drawable/text_style_title"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/title">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="#555"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="55"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/number"
+                    android:textColor="#555"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:text="55"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:textColor="#888"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:text="55"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_centerVertical="true">
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imgType"
+                    android:src="@drawable/in"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/duration"
+                    android:text="00:00"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#777"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</LinearLayout>

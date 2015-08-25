@@ -1,0 +1,383 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/wall"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:background="#22009688" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_above="@+id/footer"
+        android:background="#eee"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"/>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:weightSum="100"
+        android:background="@drawable/row_style">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:padding="5dp"
+            android:gravity="top"
+            android:background="@drawable/edittext_style">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNum"
+                android:inputType="number"
+                android:textSize="40sp"
+                android:textColor="#555"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:cursorVisible="false"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="1"
+                        android:textColor="#555"
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:textColor="#555"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="2"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:textColor="#555"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="3"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="4"
+                        android:textColor="#555"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+
+                        android:background="@drawable/button_style_rect"
+                        android:text="5"
+                        android:textSize="20sp"
+                        android:textColor="#555" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+
+                        android:background="@drawable/button_style_rect"
+                        android:text="6"
+                        android:textColor="#555"
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn7"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="7"
+
+                        android:textSize="20sp"
+                        android:textColor="#555" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn8"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="8"
+
+                        android:textSize="20sp"
+                        android:textColor="#555" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn9"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="9"
+                        android:textColor="#555"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btnAst"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="*"
+                        android:textColor="#555"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btn0"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="0"
+                        android:textColor="#555"
+
+                        android:textSize="20sp" />
+
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="#777">
+
+                    <Button
+                        android:id="@+id/btnHas"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_rect"
+                        android:text="#"
+                        android:textColor="#555"
+
+                        android:textSize="20sp" />
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3">
+
+
+                <ImageButton
+                    android:id="@+id/btnContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/button_style_contacts_rect"
+                    android:text="Dial"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:textColor="#555"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+
+                <ImageButton
+                    android:id="@+id/btnDial"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/button_style_dial_rect"
+                    android:text="Dial"
+                    android:src="@drawable/phone"
+                    android:textColor="#555"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnDel"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:src="@android:drawable/ic_input_delete"
+                        android:background="@drawable/button_style_del_rect"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Del"
+                        android:layout_weight="1"
+                        android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="aKr mHrJn"
+        android:textSize="12sp"
+        android:layout_margin="3dp"
+        android:textColor="#cddc39" />
+
+
+</RelativeLayout>
